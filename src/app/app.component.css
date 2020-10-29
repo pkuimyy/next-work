@@ -1,0 +1,16 @@
+#root {
+  height: 100%;
+}
+
+#content {
+  height: 80%;
+  width: 60%;
+}
+
+#header {
+  height: 6%;
+}
+
+#footer {
+  height: 4%;
+}
