@@ -1,0 +1,59 @@
+[
+    {
+        "work": [
+            {
+                "achievement": "1、根据出纳整理好的原始凭证审核、录入财务软件，银行对账单的核对，支出凭证的审核，现金明细的核对；\t2、计提固定资产折旧、长期待摊费用的摊销等；\t3、出具财务报表、申报各种税费；\t4、发票的购买和开具；\t5.、房租合同的整理与保管；\t6、工商局、税务局等业务的办理；\t7、领导交办的其他工作等。\t",
+                "corporation_name": "北京集通物业管理有限公司",
+                "industry_name": "房地产/建筑/建材/工程",
+                "architecture_name": "财务部",
+                "position_name": "财务会计->财务&会计",
+                "sort_id": 1
+            },
+            {
+                "achievement": " 1、每月原始凭证的整理，录入财务软件系统，编制财务报表;\t2、申报每月的增值税、附加税、个税、季报、年报、工商年检等;\t3、银行对账单的核对，清理以往账目,整理保管财务资料;\t4、登记会计账簿；\t5、税务咨询;\t6、发票的申领，开具及进项发票认证;\t7、跟税务局、工商局的对接;\t8、出具审计报告，整理审计底稿；\t9、领导交办的其他工作等。",
+                "corporation_name": "北京中林诚诺税务师事务所有限公司",
+                "industry_name": "专业服务/咨询/财会/法律/人力资源等/",
+                "architecture_name": "财务部",
+                "position_name": "财务会计->财务&会计",
+                "sort_id": 2
+            }
+        ],
+        "education": [
+            {
+                "school_name": "未知",
+                "discipline_name": "工商管理",
+                "sort_id": 1
+            }
+        ]
+    },
+    {
+        "Recommendation": [
+            {
+                "Work": {
+                    "scale": "100-499人",
+                    "corporation_name": "北京集通物业管理有限公司",
+                    "industry_name": "房地产/建筑/建材/工程",
+                    "architecture_name": "财务部",
+                    "position_name": "财务会计->财务&会计"
+                },
+                "Path": [
+                    {
+                        "Node_type": "User",
+                        "Node_name": "User A",
+                        "Relation_type": "Field"
+                    },
+                    {
+                        "Node_type": "Field",
+                        "Node_name": "媒体/出版/影视/文化传播",
+                        "Relation_type": "Attr_Industry"
+                    },
+                    {
+                        "Node_type": "Work",
+                        "Node_name": "Recommendation Work",
+                        "Relation_type": "SELF_LOOP"
+                    }
+                ]
+            }
+        ]
+    }
+]
