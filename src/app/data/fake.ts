@@ -12,7 +12,7 @@ fake.chain = [
 fake.last = new Work('国泰广告文化有限公司', '媒体/出版/影视/文化传播', '广告部', '项目经理')
 var education_list: Education[] = [
     new Education("广西师范学院", "新闻传播学"),
-    new Education()
+    // new Education()
 ]
 var work_list: Work[] = [
     new Work(
@@ -22,7 +22,7 @@ var work_list: Work[] = [
         '北京首万远洋文化传播有限公司', '媒体/出版/影视/文化传播', '策划部', '项目经理', '工作描述：\t1、组建项目执行团队，分配项目制作内容；\t2、把控项目制作周期和质量；\t3、维护客户关系，和客户保持良好的合作关系，解决项目过程中出现的所有问题；\t4、带领团队充分协作，共同完成整个项目。'
 
     ),
-    new Work()
+    // new Work()
 
 ]
 export { fake, education_list, work_list }
