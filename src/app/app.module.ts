@@ -16,12 +16,16 @@ import { FormsModule } from '@angular/forms';
 import { MatIconModule } from '@angular/material/icon';
 import { InputPanelComponent } from './input-panel/input-panel.component';
 import { OutputPanelComponent } from './output-panel/output-panel.component';
+import { NgxEchartsModule } from 'ngx-echarts';
+import { EchartsDemoComponent } from './echarts-demo/echarts-demo.component';
+import * as echarts from 'echarts';
 
 @NgModule({
   declarations: [
     AppComponent,
     InputPanelComponent,
     OutputPanelComponent,
+    EchartsDemoComponent,
   ],
   imports: [
     BrowserModule,
@@ -37,6 +41,7 @@ import { OutputPanelComponent } from './output-panel/output-panel.component';
     DragDropModule,
     FormsModule,
     MatIconModule,
+    NgxEchartsModule.forRoot({ echarts }),
   ],
   providers: [],
   bootstrap: [AppComponent]

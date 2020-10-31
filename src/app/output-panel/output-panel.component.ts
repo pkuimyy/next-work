@@ -13,11 +13,11 @@ export class OutputPanelComponent implements OnInit {
   education_list: Education[]
   work_list: Work[]
   result: Result
+
   constructor(private share: ShareService) {
     this.education_list = share.education_list
     this.work_list = share.work_list
     this.result = share.get_result()
-    console.log(this.result)
   }
 
   ngOnInit(): void {
