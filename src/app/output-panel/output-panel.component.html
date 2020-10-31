@@ -1,0 +1,22 @@
+<div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="4%">
+    <div id="echarts">
+        <div echarts [options]="options"></div>
+    </div>
+    <div fxLayout="row" id="a" fxLayoutAlign="center start" fxLayoutGap="4%">
+        <div fxLayout="column">
+            <div class="mat-subheading-2">
+                公司名称: {{this.result.last.corporation_name}}
+            </div>
+            <div>
+                行业名称: {{this.result.last.industry_name}}
+            </div>
+            <div>
+                职业名称: {{this.result.last.architecture_name}}
+            </div>
+            <div>
+                岗位名称: {{this.result.last.position_name}}
+            </div>
+        </div>
+        <button mat-raised-button routerLink="/input" color="primary">Back</button>
+    </div>
+</div>
