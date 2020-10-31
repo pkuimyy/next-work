@@ -14,8 +14,8 @@ export class InputPanelComponent implements OnInit {
   education_list: Education[]
   work_list: Work[]
   constructor(private share: ShareService) {
-    this.education_list = share.education_list
-    this.work_list = share.work_list
+    this.education_list = share.get_education_list()
+    this.work_list = share.get_work_list()
   }
   ngOnInit(): void {
 

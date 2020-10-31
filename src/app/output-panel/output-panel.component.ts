@@ -19,8 +19,8 @@ export class OutputPanelComponent implements OnInit {
   links: any = []
 
   constructor(private share: ShareService) {
-    this.education_list = share.education_list
-    this.work_list = share.work_list
+    // this.education_list = share.get_education_list()
+    // this.work_list = share.get_work_list()
     this.result = share.get_result()
     this.reshape()
     this.options = {
