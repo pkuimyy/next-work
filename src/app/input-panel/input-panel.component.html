@@ -1,0 +1,68 @@
+<div fxLayout="column" fxLayoutAlign="start center">
+    <div class="mat-title">Fill out your basic information</div>
+    <form fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="4%">
+        <mat-form-field>
+            <mat-label>Name</mat-label>
+            <input matInput type="text" name="name" [(ngModel)]="name">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>E-mail</mat-label>
+            <input matInput type="email" name="email" [(ngModel)]="email">
+        </mat-form-field>
+    </form>
+    <div class="mat-title">Fill out your education experience</div>
+    <form fxLayout="row" fxLayoutAlign="center center"
+        *ngFor="let education of education_list;let education_index = index">
+        <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="4%">
+            <div>
+                <mat-icon color="primary" (click)="onAddEducation()">add</mat-icon>
+                <mat-icon color="warn" (click)="onDeleteEducation(education_index)">delete</mat-icon>
+            </div>
+            <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="4%">
+                <mat-form-field>
+                    <mat-label>School name</mat-label>
+                    <input matInput type="text" name="school_name" [(ngModel)]="education.school_name">
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Discipline name</mat-label>
+                    <input matInput type="text" name="discipline_name" [(ngModel)]="education.discipline_name">
+                </mat-form-field>
+            </div>
+        </div>
+    </form>
+    <div class="mat-title">Fill out your work experience</div>
+    <form fxLayout="row" fxLayoutAlign="center center" *ngFor="let work of work_list;let work_index = index">
+        <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="4%">
+            <div>
+                <mat-icon color="primary" (click)="onAddWork()">add</mat-icon>
+                <mat-icon color="warn" (click)="onDeleteWork(work_index)">delete</mat-icon>
+            </div>
+            <div fxLayout="column" fxLayoutAlign="center center">
+                <mat-form-field>
+                    <mat-label>Corporation name</mat-label>
+                    <input matInput type="text" name="corporation_name" [(ngModel)]="work.corporation_name">
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Industry name</mat-label>
+                    <input matInput type="text" name="industry_name" [(ngModel)]="work.industry_name">
+                </mat-form-field>
+            </div>
+            <div fxLayout="column" fxLayoutAlign="center center">
+                <mat-form-field>
+                    <mat-label>Architecture name</mat-label>
+                    <input matInput type="text" name="architecture_name" [(ngModel)]="work.architecture_name">
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Position name</mat-label>
+                    <input matInput type="text" name="position_name" [(ngModel)]="work.position_name">
+                </mat-form-field>
+            </div>
+            <mat-form-field>
+                <mat-label>Achievement</mat-label>
+                <textarea matInput type="text" name="achievement" [(ngModel)]="work.achievement"></textarea>
+            </mat-form-field>
+        </div>
+    </form>
+    <button mat-raised-button color="primary" routerLink="/output">Get Next
+        Work</button>
+</div>

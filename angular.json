@@ -123,5 +123,8 @@
       }
     }
   },
-  "defaultProject": "next-work"
+  "defaultProject": "next-work",
+  "cli": {
+    "analytics": false
+  }
 }

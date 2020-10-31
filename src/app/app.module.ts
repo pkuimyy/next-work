@@ -14,12 +14,14 @@ import { MatTableModule } from '@angular/material/table';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { FormsModule } from '@angular/forms';
 import { MatIconModule } from '@angular/material/icon';
-
-
+import { InputPanelComponent } from './input-panel/input-panel.component';
+import { OutputPanelComponent } from './output-panel/output-panel.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    InputPanelComponent,
+    OutputPanelComponent,
   ],
   imports: [
     BrowserModule,
